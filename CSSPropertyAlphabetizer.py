@@ -34,8 +34,7 @@ for i in range(len(selectors)):
         propertiesList[j] = "\n" + propertiesList[j] + ";"
     # Sort properties
     propertiesList.sort()
-    # Add new line character after last property
-#    propertiesList[-1] = propertiesList[-1] + "\n"
+    propertiesList[-1] = propertiesList[-1] + "\n"
     # Replace original selector w/ sorted selector
     selectors[i] = selectors[i][:startI] + "".join(map(str, propertiesList)) + selectors[i][endI:]
 
